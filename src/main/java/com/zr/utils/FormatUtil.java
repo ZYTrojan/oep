@@ -119,4 +119,16 @@ public class FormatUtil {
          DecimalFormat df = new DecimalFormat("#");    
          return df.format(number);    
      }    
+     /**
+      * String数组转int数组
+      * @param stringArray
+      * @return
+      */
+     public static int[] StringArray2IntArray(String[] stringArray){
+    	 int[] intArray = new int[stringArray.length];
+    	 for(int i = 0;i < stringArray.length;i++){
+    		 intArray[i] = Integer.parseInt(stringArray[i]);
+    	 }
+    	 return intArray;
+     }
 }

@@ -17,4 +17,103 @@
     <servlet-name>loginAction</servlet-name>
     <servlet-class>action.LoginAction</servlet-class>
   </servlet>
+   <!-- 成绩查询-->
+  <servlet>
+  	<servlet-name>queryscore</servlet-name>
+  	<servlet-class>com.zr.action.QueryScoreAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>queryscore</servlet-name>
+  	<url-pattern>/llj/queryscore</url-pattern>
+  </servlet-mapping>
+    <!-- 考试查询 -->
+  <servlet-mapping>
+    <servlet-name>EMSSearchAction</servlet-name>
+    <url-pattern>/ems/search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EMSSearchAction</servlet-name>
+    <servlet-class>com.zr.action.ems.SearchAction</servlet-class>
+  </servlet>
+  <!-- 删除考试 -->
+  <servlet-mapping>
+    <servlet-name>EMSDeleteAction</servlet-name>
+    <url-pattern>/ems/delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EMSDeleteAction</servlet-name>
+    <servlet-class>com.zr.action.ems.DeleteAction</servlet-class>
+  </servlet>
+  <!-- 新增考试 -->
+  <servlet-mapping>
+    <servlet-name>EMSInsertAction</servlet-name>
+    <url-pattern>/ems/insert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EMSInsertAction</servlet-name>
+    <servlet-class>com.zr.action.ems.InsertAction</servlet-class>
+  </servlet>
+  <!-- ？？？ -->
+  <servlet-mapping>
+    <servlet-name>EMSInsertExamQuestion</servlet-name>
+    <url-pattern>/ems/insertExamQuestion</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EMSInsertExamQuestion</servlet-name>
+    <servlet-class>com.zr.action.ems.examQuestion.InsertExamQuestionAction</servlet-class>
+  </servlet>
+  <!-- 获取考试基本信息 -->
+  <servlet-mapping>
+    <servlet-name>EMSGetExamBaseInfo</servlet-name>
+    <url-pattern>/ems/getExamBaseInfo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EMSGetExamBaseInfo</servlet-name>
+    <servlet-class>com.zr.action.ems.examQuestion.GetExamBaseInfoAction</servlet-class>
+  </servlet>
+  <!-- 获取考题类型 -->
+  <servlet-mapping>
+    <servlet-name>EMSGetQuestionType</servlet-name>
+    <url-pattern>/ems/getQuestionType</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EMSGetQuestionType</servlet-name>
+    <servlet-class>com.zr.action.ems.examQuestion.GetQuestionTypeAction</servlet-class>
+  </servlet>
+  <!-- 获取考题 -->
+  <servlet-mapping>
+    <servlet-name>EMSGetQuestion</servlet-name>
+    <url-pattern>/ems/getQuestion</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EMSGetQuestion</servlet-name>
+    <servlet-class>com.zr.action.ems.examQuestion.GetQuestionAction</servlet-class>
+  </servlet>
+  <!-- 设置考题 -->
+  <servlet-mapping>
+    <servlet-name>EMSSetQuestion</servlet-name>
+    <url-pattern>/ems/setQuestion</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EMSSetQuestion</servlet-name>
+    <servlet-class>com.zr.action.ems.examQuestion.SetQuestionAction</servlet-class>
+  </servlet>
+  <!-- 获取某考试的考题 -->
+  <servlet-mapping>
+    <servlet-name>EMSGetQuestionOfExam</servlet-name>
+    <url-pattern>/ems/getQuestionOfExam</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EMSGetQuestionOfExam</servlet-name>
+    <servlet-class>com.zr.action.ems.examQuestion.GetQuestionOfExamAction</servlet-class>
+  </servlet>
+  <!-- 删除某考试的考题 -->
+  <servlet-mapping>
+    <servlet-name>EMSRemoveQuestionOfExam</servlet-name>
+    <url-pattern>/ems/removeQuestionOfExam</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EMSRemoveQuestionOfExam</servlet-name>
+    <servlet-class>com.zr.action.ems.examQuestion.RemoveQuestionOfExamAction</servlet-class>
+  </servlet>
 </web-app>
